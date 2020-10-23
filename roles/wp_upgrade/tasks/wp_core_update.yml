@@ -1,0 +1,5 @@
+- name: "Update Wordpress core"
+  become: true
+  become_user: cpanel_username
+  become_method: su
+  command: "wp core update --path=/home/cpanel_user/public_html/"

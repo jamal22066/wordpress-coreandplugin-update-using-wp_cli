@@ -1,0 +1,6 @@
+- name: "WP CORE UPDATE"
+  include: wp_core_update.yml
+
+- name: "WP PLUGIN UPDATE"
+  include: plugin_update.yml  
+  
