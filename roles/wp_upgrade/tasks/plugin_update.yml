@@ -3,8 +3,8 @@
   become_user: cpanel_username
   become_method: su
   command: "wp plugin update --path=/home/cpanel_username/public_html/ --all"
-  - name: "Update Wordpress core for themagicalsense.com"
-    become: true
-    become_user: electrolysisbyal
-    become_method: su
-    command: "wp core update --path=/home/electrolysisbyal/public_html/themagicalsense.com/"  
+- name: "Update Wordpress core for themagicalsense.com"
+  become: true
+  become_user: electrolysisbyal
+  become_method: su
+  command: "wp core update --path=/home/electrolysisbyal/public_html/themagicalsense.com/"  
